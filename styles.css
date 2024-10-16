@@ -1,0 +1,109 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: azure;
+  color: rgb(20, 25, 35);
+  padding: 5% 15%;
+  height: auto;
+  font-family: serif;
+  gap: 5em;
+}
+
+body > * {
+  max-width: 1000px;
+}
+
+body a,
+h4,
+li {
+  font-size: 1.5em;
+  margin: 0em;
+}
+
+body h3 {
+  font-size: 2.5em;
+  font-family: "Courier New", monospace;
+  color: rgba(20, 25, 35, 0.7);
+}
+
+body a,
+h2,
+p,
+li,
+h3 {
+  text-decoration: none;
+  color: rgb(20, 25, 35);
+  margin: 0px;
+}
+
+.name {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.name > div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.name h2 {
+  font-size: 5em;
+  font-weight: bold;
+  width: 50px;
+  margin: 0px;
+  display: inline-block;
+  justify-content: center;
+  font-family: "Courier New", monospace;
+  color: rgba(20, 25, 35, 0);
+  background-image: linear-gradient(
+    rgba(20, 25, 35),
+    rgba(20, 25, 35),
+    orange,
+    red,
+    purple,
+    blue
+  );
+  background-clip: text;
+  background-size: 200% 500%;
+  transition: 0.15s;
+}
+
+.name-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 5em;
+}
+
+.intro-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about {
+  color: rgba(20, 25, 35, 0.7);
+}
+
+#projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 15px;
+  border: 1px solid steelblue;
+  width: 1000px;
+}
+
+#projects-container > * {
+  width: 250px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-desc {
+  font-size: 1em;
+}
