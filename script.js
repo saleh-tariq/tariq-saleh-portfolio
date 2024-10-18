@@ -14,6 +14,10 @@ let count = 0;
 
 const nameDiv = document.getElementById("my-name");
 const letters = Array.from(document.querySelectorAll(".name-letters"));
+const email = document.getElementById("email");
+const emailContainer = document.getElementById("email-container");
+const phone = document.getElementById("phone");
+const phoneContainer = document.getElementById("phone-container");
 let mouseIsOver = false;
 
 const changeLetters = (targetWord, rotate) => {
@@ -48,6 +52,26 @@ document.addEventListener("DOMContentLoaded", () => {
   });
   nameDiv.addEventListener("mouseleave", (e) => {
     mouseIsOver = false;
+  });
+  phoneContainer.addEventListener("mouseenter", (e) => {
+    phone.innerText = "+1 313 6004575";
+  });
+  phoneContainer.addEventListener("click", (e) => {
+    navigator.clipboard.writeText("+1 313 6004575");
+    phone.innerText = "Copied!";
+  });
+  phoneContainer.addEventListener("mouseleave", (e) => {
+    phone.innerText = "Phone";
+  });
+  emailContainer.addEventListener("mouseenter", (e) => {
+    email.innerText = "salehtariq@proton.me";
+  });
+  emailContainer.addEventListener("click", (e) => {
+    navigator.clipboard.writeText("salehtariq@proton.me");
+    email.innerText = "Copied!";
+  });
+  emailContainer.addEventListener("mouseleave", (e) => {
+    email.innerText = "Email";
   });
 
   addHover();
