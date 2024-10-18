@@ -38,15 +38,17 @@ const hover = (e) => {
   nameDiv.removeEventListener("mouseenter", hover);
 };
 
-nameDiv.addEventListener("mouseenter", (e) => {
-  mouseIsOver = true;
-});
-nameDiv.addEventListener("mouseleave", (e) => {
-  mouseIsOver = false;
-});
-
 const addHover = () => {
   nameDiv.addEventListener("mouseenter", hover);
 };
 
-addHover();
+document.addEventListener("DOMContentLoaded", () => {
+  nameDiv.addEventListener("mouseenter", (e) => {
+    mouseIsOver = true;
+  });
+  nameDiv.addEventListener("mouseleave", (e) => {
+    mouseIsOver = false;
+  });
+
+  addHover();
+});

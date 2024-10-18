@@ -2,7 +2,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: azure;
+  background-color: aliceblue;
   color: rgb(20, 25, 35);
   padding: 5% 15%;
   height: auto;
@@ -121,7 +121,7 @@ h3 {
 }
 
 .contact-button-front {
-  background-color: azure;
+  background-color: aliceblue;
 }
 
 .contact-button-back {
