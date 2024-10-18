@@ -15,9 +15,10 @@ body > * {
 }
 
 body a,
+p,
 h4,
 li {
-  font-size: 1.5em;
+  font-size: 1.25em;
   margin: 0em;
 }
 
@@ -41,6 +42,11 @@ h3 {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
+}
+
+.name-bar > h3 {
+  text-align: right;
+  gap: 5em;
 }
 
 .name > div {
@@ -72,10 +78,10 @@ h3 {
 }
 
 .name-bar {
+  width: 1000px;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-  gap: 5em;
+  justify-content: space-between;
 }
 
 .intro-section {
@@ -90,20 +96,60 @@ h3 {
 
 .contact-info {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   width: 1000px;
   justify-content: space-between;
 }
 
 .contact-buttons {
-  width: 96px;
+  width: 171px;
   height: 46px;
+  font-weight: bold;
+  color: transparent;
+  background-image: linear-gradient(
+    rgba(20, 25, 35),
+    rgba(20, 25, 35),
+    orange,
+    red,
+    purple,
+    blue
+  );
+  background-clip: text;
+  background-size: 200% 300%;
+  transition: 0.15s;
+  border: none;
+}
+
+.contact-button-front {
   background-color: azure;
-  border: 1px solid steelblue;
+}
+
+.contact-button-back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 175px;
+  height: 50px;
+  background-image: linear-gradient(
+    rgba(20, 25, 35),
+    rgba(20, 25, 35),
+    orange,
+    red,
+    purple,
+    blue
+  );
+  background-size: 200% 400%;
+  transition: 0.15s;
+}
+
+.contact-button-back:hover {
+  scale: 105%;
+  background-position: bottom;
 }
 
 .contact-buttons:hover {
   scale: 105%;
+  background-position: bottom;
 }
 
 #projects-container {
@@ -120,13 +166,11 @@ h3 {
   flex-direction: column;
   align-items: center;
   border-radius: 15px;
-  border: 1px solid steelblue;
   padding: 40px;
   height: 100%;
 }
 
 .project-desc {
-  font-size: 1em;
   text-align: center;
   margin: 10px 0px;
 }
@@ -135,7 +179,6 @@ h3 {
   color: steelblue;
   font-style: bold;
 }
-
 .logos {
   height: 50px;
   width: 500px;
@@ -165,19 +208,34 @@ h3 {
 
 .logos:hover .stack-image {
   animation-play-state: paused;
+  filter: grayscale(1);
+  transition: 0.15s;
 }
 
 .stack-image:hover {
-  scale: 95%;
+  scale: 85%;
   transition: 0.15s;
+  filter: grayscale(0) !important;
 }
 
 #about-me {
   width: 1000px;
+  display: flex;
+  flex-direction: row;
+  gap: 5em;
 }
 
 #projects {
   width: 1000px;
+}
+
+@keyframes scroll-reveal {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
 }
 
 @keyframes slide {
