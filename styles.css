@@ -101,7 +101,7 @@ h3 {
   justify-content: space-between;
 }
 
-.contact-buttons {
+.buttons {
   width: 171px;
   height: 46px;
   font-weight: bold;
@@ -120,11 +120,11 @@ h3 {
   border: none;
 }
 
-.contact-button-front {
+.button-front {
   background-color: aliceblue;
 }
 
-.contact-button-back {
+.button-back {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -142,14 +142,34 @@ h3 {
   transition: 0.15s;
 }
 
-.contact-button-back:hover {
+.button-front:hover {
+  opacity: 0.95;
+  transition: 0.15s;
+}
+
+.button-back:hover {
   scale: 105%;
   background-position: bottom;
 }
 
-.contact-buttons:hover {
+.buttons:hover {
   scale: 105%;
   background-position: bottom;
+}
+
+.button-front:active {
+  opacity: 1;
+  transition: 0.15s;
+}
+
+.button-back:active {
+  scale: 95%;
+  background-position: center;
+}
+
+.buttons:active {
+  scale: 95%;
+  background-position: center;
 }
 
 #projects-container {
