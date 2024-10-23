@@ -10,6 +10,14 @@ body {
   gap: 5em;
 }
 
+#image-of-me {
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 50%;
+  filter: contrast(1.15) saturate(1.25) brightness(1.15);
+}
+
 body > * {
   max-width: 1000px;
 }
@@ -247,6 +255,12 @@ h3 {
 
 #projects {
   width: 1000px;
+}
+
+.about-me-paragraph {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
 }
 
 @keyframes scroll-reveal {
