@@ -10,6 +10,17 @@ const targetWords = [
   "Dependable",
   "Committed",
 ];
+
+const smallerTargetWords = [
+  "Tech Savvy",
+  "Work  Ready",
+  "Full  Time",
+  "Hire  Fast",
+  "You   Don't",
+  "Want  to",
+  "Miss  Out",
+  "Not   Sorry",
+];
 let count = 0;
 
 const nameDiv = document.getElementById("my-name");
@@ -33,7 +44,12 @@ const changeLetters = (targetWord, rotate) => {
 };
 
 const hover = (e) => {
-  changeLetters(targetWords[count % targetWords.length], true);
+  changeLetters(
+    window.innerWidth > 600
+      ? targetWords[count % targetWords.length]
+      : smallerTargetWords[count % smallerTargetWords.length],
+    true
+  );
   count++;
   setTimeout(() => {
     changeLetters(myName);
