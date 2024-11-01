@@ -85,6 +85,10 @@ h3 {
   transition: 0.15s;
 }
 
+.about-me-paragraph span {
+  font-weight: bold;
+}
+
 .name-bar {
   width: 1000px;
   display: flex;
