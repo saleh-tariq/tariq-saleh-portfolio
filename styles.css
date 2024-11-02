@@ -110,6 +110,7 @@ h3 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  height: 80%;
 }
 
 .buttons {
