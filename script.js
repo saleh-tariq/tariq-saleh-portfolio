@@ -11,16 +11,7 @@ const targetWords = [
   "Committed",
 ];
 
-const smallerTargetWords = [
-  "Tech Savvy",
-  "Work  Ready",
-  "Full  Time",
-  "Hire  Fast",
-  "You   Don't",
-  "Want  to",
-  "Miss  Out",
-  "Not   Sorry",
-];
+const smallerTargetWords = ["Tech Savvy", "Work  Ready", "Hire  Fast"];
 let count = 0;
 
 const nameDiv = document.getElementById("my-name");
